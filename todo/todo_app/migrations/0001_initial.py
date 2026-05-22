@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True, null=True)),
                 ('completed', models.BooleanField(default=False)),
                 ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('Type_connect_with_Todo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='store_app.type')),
+                ('Type_connect_with_Todo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='todo_app.type')),
             ],
         ),
     ]

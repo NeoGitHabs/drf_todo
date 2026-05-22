@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store_app',
+    'todo_app',
     'rest_framework',
     'django_filters',
     'rest_framework_swagger',
@@ -43,7 +43,7 @@ MIDDLEWARE = [
     "allauth.account.middleware.AccountMiddleware",
 ]
 
-ROOT_URLCONF = 'online_shop.urls'
+ROOT_URLCONF = 'todo_project.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'online_shop.wsgi.application'
+WSGI_APPLICATION = 'todo_project.wsgi.application'
 
 DATABASES = {
     'default': {

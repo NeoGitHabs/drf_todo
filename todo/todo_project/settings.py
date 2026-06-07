@@ -22,7 +22,6 @@ INSTALLED_APPS = [
     'todo_app',
     'rest_framework',
     'django_filters',
-    'rest_framework_swagger',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

@@ -1,12 +1,14 @@
 from rest_framework import serializers
 from .models import Type, Todo
 
-class TypeSerializers(serializers.ModelSerializer):
+
+class TypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Type
-        fields = ('status',)
+        fields = ('id', 'status')
 
-class TodoSerializers(serializers.ModelSerializer):
+
+class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ('id', 'title', 'description', 'completed', 'created_date')
+        fields = ('id', 'type', 'title', 'description', 'completed', 'created_date')
